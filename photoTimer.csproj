@@ -44,6 +44,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTime.Designer.cs">
+      <DependentUpon>AddTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lib\WaterMarkHelper.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -52,6 +59,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddTime.resx">
+      <DependentUpon>AddTime.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
